@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+RewriteRule ([A-Z]{2}_[A-Z]{2})\.html index.php?lang=$1 [L]
+</IfModule>
